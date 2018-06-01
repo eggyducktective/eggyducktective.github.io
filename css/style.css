@@ -2,17 +2,36 @@
   margin: 0;
   padding: 0;
 }
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+
 
 body {
-  background: #0A122A;
+  /* background: #0A122A; */
+  background: rgb(228, 228, 228);
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+h2 {
+  text-shadow: 1px 1px grey;
+  color: rgb(62, 62, 62);
 }
 
 /* Let's style the wrapper in such away that,
 it should always be at the center of the browser */
 .wrapper {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 5%;
+  left: 96%;
   transform: translate(-50%, -50%);
   width: 550px;
 }
@@ -26,10 +45,10 @@ it should always be at the center of the browser */
   and float them to left and set its border and border-radius.
  */
 .wrapper ul li {
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
-  margin: 0 10px;
+  width: 38px;
+  height: 38px;
+  line-height: 15px;
+  margin: 0 5px;
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
@@ -42,22 +61,23 @@ it should always be at the center of the browser */
 to align it properly */
 .wrapper ul li .fa {
   color: #D8E2DC;
-  margin-top: 20px;
+  margin-top: 3px;
   transition: all 0.5s ease;
+  font-size: 28px;
 }
 
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
   to icons for glowing effect and use transition property for smooth transition effect. */
-/*facebook*/
-.wrapper ul li:hover.facebook {
-  border: 5px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
+/*linkedin*/
+.wrapper ul li:hover.linkedin {
+  border: 5px solid #0077B5;
+  box-shadow: 0 0 15px #0077B5;
   transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover .fa-facebook {
-  color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
+.wrapper ul li:hover .fa-linkedin {
+  color: #0077B5;
+  text-shadow: 0 0 15px #0077B5;
   transition: all 0.5s ease;
 }
 
@@ -102,14 +122,14 @@ to align it properly */
 
 /* github */
 .wrapper ul li:hover.github {
-  border: 5px solid black;
-  box-shadow: 0 0 15px black;
+  border: 5px solid #211F1F;
+  box-shadow: 0 0 15px #211F1F;
   transition: all 0.5s ease;
 }
 
 .wrapper ul li:hover .fa-github {
-  color: black;
-  text-shadow: 0 0 15px black;
+  color: #211F1F;
+  text-shadow: 0 0 15px #211F1F;
   transition: all 0.5s ease;
 }
 
@@ -139,4 +159,145 @@ to align it properly */
   .wrapper ul li.google{
       margin-left: 15px;
   }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #B2C0B0;
+    overflow: hidden;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    /* background-color: #EEEFE5; */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #d2d2d2;
+    color: white;
+}
+
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+/* img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+} */
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("http://www.ophoco.com/download/original/gradient-light-dark-background-3wpp6u.jpg");
+  z-index:2;
+}
+
+/*
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+} */
+
+#slide1:before {
+  background-image: url("http://www.baltana.com/files/wallpapers-2/Dark-Background-Desktop-Wallpaper-04527.jpg");
+  /* background-color: #B2C0B0; */
+  transform: translateZ(-1px) scale(2);
+}
+
+
+#slide2 {
+  background-image: url("https://lorempixel.com/640/480/abstract/5/");
+  z-index:2;
+}
+
+
+#slide3:before {
+  background-image: url("http://notgoaway.com/wp-content/uploads/2017/07/Dark-Background-6A.jpg");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background: #222;
 }
