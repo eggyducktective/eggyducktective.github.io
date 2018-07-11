@@ -54,6 +54,24 @@ h2 {
     text-decoration: underline;
 }
 
+
+
+.projectLinks {
+  color: rgb(185, 31, 96);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.projectLinks:hover {
+    text-decoration: underline;
+
+}
+
+.projectLinks:active {
+    text-decoration: underline;
+}
+
 .column {
     float: left;
     width: 50%;
@@ -233,12 +251,14 @@ to align it properly */
 
 
 h1 {
-   font-size: 250%
+   font-size: 250%;
+   /* color: rgba(196, 35, 151, 0.6); */
+   color: rgb(185, 31, 96);
+
 }
 
 p {
-/*  font-size: 140%;
-*/  font-size: 110%;
+  font-size: 110%;
   line-height: 150%;
   color: #333;
 }
