@@ -87,6 +87,7 @@ it should always be at the center of the browser */
   position: absolute;
   top: 5%;
   left: 98%;
+  bottom: 88%;
   transform: translate(-50%, -50%);
   width: 300px;
 }
