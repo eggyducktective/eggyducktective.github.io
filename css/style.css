@@ -46,7 +46,7 @@ h2 {
   text-align: center;
 }
 
-/* #contactdiv {
+#contactdiv {
   margin-left: 2%;
 }
 
@@ -60,14 +60,14 @@ h2 {
 .alink:hover {
   text-decoration: underline;
 
-} */
+}
 
 
 .projectLinks {
   color: rgb(185, 31, 96);
   text-decoration: none;
   font-weight: bold;
-
+  position: relative; /* this is for slideimg: position: absolute, parallax scrolling works, and for the links to be clickable */
 }
 
 
@@ -282,12 +282,14 @@ to align it properly */
 
 .slide:before {
   content: "";
-  position: absolute;
+  /* position: absolute; THIS IS BADDDDDDD - Links arent clickable*/
+  position: absolute; /* this is for parallax images to show */
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+
 }
 
 .title {
@@ -402,7 +404,7 @@ h1 #name {
   background-image: url("../img/slide5.png");
 }
 
-.resize {
+/* .resize {
     width: 300px;
     height: auto;
 }
@@ -410,7 +412,7 @@ h1 #name {
 .photos {
     position: absolute;
     min-width: 1600px;
-}
+} */
 
 
 
