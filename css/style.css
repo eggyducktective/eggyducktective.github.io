@@ -281,7 +281,7 @@ to align it properly */
 
 .slide:before {
   content: "";
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
@@ -401,7 +401,6 @@ h1 #name {
   background-image: url("../img/slide5.png");
 }
 
-/*
 .resize {
     width: 300px;
     height: auto;
@@ -411,7 +410,7 @@ h1 #name {
     position: absolute;
     min-width: 1600px;
 }
- */
+
 
 
 /* _____________________*/
