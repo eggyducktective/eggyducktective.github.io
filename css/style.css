@@ -67,6 +67,7 @@ h2 {
   color: rgb(185, 31, 96);
   text-decoration: none;
   font-weight: bold;
+
 }
 
 
@@ -281,7 +282,7 @@ to align it properly */
 
 .slide:before {
   content: "";
-  position: relative;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
