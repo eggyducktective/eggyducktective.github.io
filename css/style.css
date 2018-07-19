@@ -63,7 +63,7 @@ h2 {
 #topbutton a {
   text-decoration: none;
   font-weight: bold;
-  padding-left: 400px;
+  /* padding-left: 400px; */
   font-size: 45px;
   color: rgb(93, 138, 113);
 }
@@ -294,7 +294,7 @@ h2 {
 }
 
 .list-unstyled {
-    padding-left: 400px;
+    /* padding-left: 400px; */
     list-style: none;
 }
 .list-inline li {
