@@ -375,6 +375,10 @@ h2 {
   .slideimg {
     position: inherit;
   }
+
+  .topnav {
+    height: 95px;
+  }
 }
 
 @media (max-width: 699px) {
