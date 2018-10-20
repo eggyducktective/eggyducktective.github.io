@@ -1,189 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Eggy Ducktective</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="js/jquery.js"></script>
-  <script src="js/main.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+        
+        <!-- Fonts-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+        
+        <!-- Customed CSS-->
+        <link rel="stylesheet" href="css/style.css">
 
-  <title>Anna Tran</title>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
 
-  <div class="header">
-    <a name="top"></a>
-    <div class="topnav">
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="https://drive.google.com/file/d/19XT4Pxm_FHQ1BucZb3zkHDnFCq7TtnI8/view" target="_blank">Resume</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
+        <header class="header">
 
-</head>
+           
+            <ul class="navigation">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="https://drive.google.com/file/d/19XT4Pxm_FHQ1BucZb3zkHDnFCq7TtnI8/view" target="_blank">Resume</a></li>
+                    <li><a href="#contact-details">Contact</a></li>
+            </ul>
+            
 
-<body>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Anna Tran</span>
+                    <span class="heading-primary--sub">Web Developer</span>
+                </h1>
 
-  <div id="title" class="slide header">
-    <div class="bubbles">
-      <h1 id="name">ANNA TRAN</h1>
-      <h3>WEB DEVELOPER</h3>
-    </div>
-  </div>
-
-  <div id="slide1" class="slide">
-    <a name="portfolio"></a>
-
-    <div class="title">
-        <a href="https://searchthestars.herokuapp.com/#/" target="_blank"><img class="slideimg" src="img/search-the-stars.jpeg"></img></a>
-      <h1>Search the Stars</h1>
-      <br>
-      <p>My final project at General Assembly. This app helps you explore the relations between actors and the movies they have appeared in. With the relations rendered in 2D format using D3 force graph layout and 3D format. (This project is not yet responsive on mobile devices. At the time, I was trying to work on new tech). Powered with:<br><br>
-        - Neo4j <br>
-        - Node.js <br>
-        - React.js<br>
-        - HTML<br>
-        - CSS<br><br>
-      <a class="projectLinks" href="https://github.com/eggyducktective/moviestar-react-frontend" target="_blank">GITHUB</a> |
-      <a class="projectLinks" href="https://searchthestars.herokuapp.com/" target="_blank">LIVE DEMO</a></p>
-    </div>
-  </div>
+                <a href="#projects" class="button button--white button--animated">Discover My Works</a>
+            </div>
+        </header>
 
 
-  <div id="slide2" class="slide">
 
-
-    <div class="title">
-          <a href="https://project2-travelmate.herokuapp.com/" target="_blank"><img class="slideimg" src="img/travel-mate.jpeg"></img></a>
-      <h1>Travel Mate</h1>
-      <br>
-      <p>My main group project in which we builed a web application from the ground up. Our site gives great holiday plans for travellers, from real travellers. Technologies used:<br><br>
-          - HTML<br>
-          - CSS<br>
-          - Ruby on Rails<br>
-          - Bootstrap<br>
-          - AJAX<br>
-          - Javascript<br><br>
-      <a class="projectLinks" href="https://github.com/eggyducktective/travelMate" target="_blank">GITHUB</a> |
-      <a class="projectLinks" href="https://project2-travelmate.herokuapp.com/" target="_blank">LIVE DEMO</a></p>
-    </div>
-
-  </div>
-
-  <div id="slide3" class="slide">
-
-    <div class="title">
-        <a href="https://kittydating.herokuapp.com/" target="_blank"><img class="slideimg" src="img/kitty-dating.jpg"></img></a>
-      <h1>Kitty Dating</h1>
-
-      <br>
-      <p>I had this idea for a couple of weeks while studying Ruby on Rails. Cat puns, they are purrrty fun. Your kitties will no longer be lonely. This app is like Tinder, but for ... cats. Your lovely companions will embark on a quest to find their true love. Technologies used:<br><br>
-        - HTML <br>
-        - CSS <br>
-        - Javascript <br>
-        - Ruby on Rails
-        - Third Party API<br><br>
-      <a class="projectLinks" href="https://github.com/eggyducktective/tinder-for-kittens" target="_blank">GITHUB</a> |
-      <a class="projectLinks" href="https://kittydating.herokuapp.com/" target="_blank">LIVE DEMO</a></p>
-    </div>
-  </div>
-
-  <div id="slide4" class="slide">
-
-    <div class="title">
-      <a href="https://www.annasworkshop.com/tic-tac-toe/" target="_blank"><img class="slideimg" src="img/tic-tac-toe.jpeg"></img></a>
-      <h1>Tic-Tac-Toe</h1>
-      <br>
-      <p>My first solo project at my Web Development bootcamp (Please note that I have left this project at its original state from my time at GA, to show growth over the past 3 months of the course). We're asked to build a simple game of Tic Tac Toe. Lots of trial and error at first, but I got it working in the end. Technologies used:<br><br>
-        - HTML <br>
-        - CSS <br>
-        - Javascript<br>
-        - jQuery<br><br>
-        Join the Tic Tac Toe revolution by forking me:<br><br>
-
-      <a class="projectLinks" href="https://github.com/eggyducktective/tic-tac-toe" target="_blank">GITHUB</a> |
-      <a class="projectLinks" href="http://www.annasworkshop.com/tic-tac-toe/" target="_blank">LIVE DEMO</a></p>
-    </div>
-  </div>
-
-  <div id="slide5" class="slide">
-    <a name="about"></a>
-    <h1>About me</h1>
-    <br>
-    <div>
-      <p>I am a creative web-development up-and-comer; a "Web Development Immersive" student at General Assembly Sydney.</p>
-      <br>
-      <p>I believe in teamwork, collaboration and presentation as key values to drive product success, adoption and consumer satisfaction.</p>
-      <br>
-      <p>Since I was young, I have enjoyed exploring my creative side and have been searching for a career in which I can apply this since I have moved to Australia. Over the past few years, I gained an interest in web development, inspired somewhat by my days of editing myspace profiles in CSS. The idea of being able to be part of creating a product that users will directly interact with held great appeal to me.</p>
-      <br>
-      <p>I finally applied to WDI 27 at GA which has driven my captivation for front end web development to the next level. I feel I have much to bring to the table and look forward to working with you.
-      </p>
-      <br><br>
-      <a id="resume" href="https://drive.google.com/file/d/19XT4Pxm_FHQ1BucZb3zkHDnFCq7TtnI8/view" target="_blank">DOWNLOAD RESUME (PDF)</a>
-
-    </div>
-    <br><br>
-
-    <h1>Skills</h1>
-    <br>
-    <div id="skillsdiv">
-      <div class="row">
-        <div class="column">
-          HTML<br>
-          CSS/SCSS<br>
-          Bootstrap<br>
-          Javascript<br>
-          jQuery<br>
-          React.js<br>
-          Underscore.js<br>
+        <div id="about" class="pt-5 mt-5">
+           
+            <h1 class="pb-5 text-center">About me</h1>
+            
+            <div>
+              <p>I am a creative web-development up-and-comer; a "Web Development Immersive" student at General Assembly Sydney.</p>
+              
+              <p>I believe in teamwork, collaboration and presentation as key values to drive product success, adoption and consumer satisfaction.</p>
+              
+              <p>Since I was young, I have enjoyed exploring my creative side and have been searching for a career in which I can apply this since I have moved to Australia. Over the past few years, I gained an interest in web development, inspired somewhat by my days of editing myspace profiles in CSS. The idea of being able to be part of creating a product that users will directly interact with held great appeal to me.</p>
+              
+              <p class="pb-5">I finally applied to WDI 27 at GA which has driven my captivation for front end web development to the next level. I feel I have much to bring to the table and look forward to working with you.
+              </p>
+              
+              <a id="resume" href="https://drive.google.com/file/d/19XT4Pxm_FHQ1BucZb3zkHDnFCq7TtnI8/view" target="_blank">DOWNLOAD RESUME (PDF)</a>
+        
+            </div>
         </div>
 
-        <div class="column">
-          Ruby<br>
-          Ruby on Rails<br>
-          SQL<br>
-          PostgreSQL<br>
-          AJAX<br>
-          Node.js<br>
-          Git<br>
+      
+
+        
+           <div id="projects">
+               <h1 class="text-center pt-5 mt-4">My projects</h1>
+                <div class="row pt-5 mt-5">
+                   <div class="col-12 col-md-6 col-xl-4 py-2 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top img-fluid img-thumbnail" src="img/search-the-stars.png" alt="GA final project">
+                            <div class="card-body">
+                            <h2 class="card-title">Search the Stars</h2>
+                            <p class="card-text text-center">
+                                This app helps you explore the relations between actors and their movies.
+                                With the relations rendered in 2D format using D3 force graph layout and 3D format. 
+                                (This project is not yet responsive on mobile devices. At the time, I was trying to work on new tech). Powered with:<br><br>
+                                 Neo4j | Node.js | React.js | HTML | CSS</p>
+                           
+                            </div>
+                            <div class="card-footer text-muted text-center">
+                                <a href="#" class="btn btn-primary btn-lg">Github</a>
+                                <a href="#" class="btn btn-primary btn-lg">Live Demo</a>
+                            </div>
+                        </div>
+                   </div>
+    
+    
+                
+                   <div class="col-12 col-md-6 col-xl-4 py-2 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top img-fluid img-thumbnail" src="img/kitty-dating.png" alt="Ruby on Rail project">
+                            <div class="card-body">
+                            <h2 class="card-title">Kitty Dating
+                          
+                            </h2>
+                            <p class="card-text text-center">
+                                I had this idea for a couple of weeks while studying Ruby on Rails. Cat puns, they are purrrty fun. 
+                                Your kitties will no longer be lonely. This app is like Tinder, but for ... cats. 
+                                Your lovely companions will embark on a quest to find their true love. Technologies used: <br><br>
+                                HTML | CSS | Javascript | Ruby on Rails | Third Party API
+                            </p>
+                            
+                            </div>
+
+                            <div class="card-footer text-muted text-center">
+                                <a href="#" class="btn btn-primary btn-lg">Github</a>
+                                <a href="#" class="btn btn-primary btn-lg">Live Demo</a>
+                            </div>
+                        </div>
+                   </div>
+    
+                   <div class="col-12 col-md-6 col-xl-4 py-2 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top img-fluid img-thumbnail" src="img/tic-tac-toe.png" alt="GA first project">
+                            <div class="card-body">
+                            <h2 class="card-title">Tic Tac Toe
+                            
+                            </h2>
+                            <p class="card-text text-center">My first solo project at my Web Development bootcamp (Please note that I have left this project at its original state from my time at GA, to show growth over the past 3 months of the course). 
+                               We're asked to build a simple game of Tic Tac Toe. Lots of trial and error at first, but I got it working in the end. Technologies used:<br><br>
+                               HTML | CSS | Javascript | jQuery
+                            
+                            </div>
+
+                            <div class="card-footer text-muted text-center">
+                               <a href="#" class="btn btn-primary btn-lg">Github</a>
+                               <a href="#" class="btn btn-primary btn-lg">Live Demo</a>
+                           </div>
+                        </div>
+                   </div>
+                </div>
+
+                <div class="row pt-5 mt-5">
+
+                    <div class="col-12 col-md-6 col-xl-4 py-2 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top img-fluid img-thumbnail" src="img/travel-mate.png" alt="GA group project">
+                            <div class="card-body">
+                            <h2 class="card-title">Travel Mate
+                                
+                            </h2>
+                            <p class="card-text text-center">My main group project in which we builed a web application from the ground up. 
+                                Our site gives great holiday plans for travellers, from real travellers. Technologies used:<br><br>
+                                HTML | CSS | Ruby on Rails | Bootstrap | AJAX | Javascript
+                            
+                            </div>
+
+                            <div class="card-footer text-muted text-center">
+                                <a href="#" class="btn btn-primary btn-lg">Github</a>
+                                <a href="#" class="btn btn-primary btn-lg">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 py-2 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top img-fluid img-thumbnail" src="img/matz-tribute.png" alt="Ruby on Rail project">
+                            <div class="card-body">
+                            <h2 class="card-title">Yukihiro Matsumoto
+                            
+                            </h2>
+                            <p class="card-text text-center">My personal project after GA. I want to practice my Bootstrap skills and build a tribute page to my favourite computer scientist, Yukihiro Matsumoto<br><br>
+                            Bootstrap | HTML | CSS
+                        
+                            </div>
+                            <div class="card-footer text-muted text-center">
+                                <a href="#" class="btn btn-primary btn-lg">Github</a>
+                                <a href="#" class="btn btn-primary btn-lg">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+         
+                    <div class="col-12 col-md-6 col-xl-4 py-2 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <img class="card-img-top img-fluid img-thumbnail" src="img/rilakkuma.png" alt="GA group project">
+                            <div class="card-body">
+                            <h2 class="card-title">Rilakkuma-SanX
+                    
+                            </h2>
+                            <p class="card-text text-center">Rilakkuma is a cultural icon. He's a teddy bear hailing from the great land of Japan. I'm building a page for him and practicing technical skills I've learned from General Assembly at the same time<br><br>
+                            AJAX | HTML | CSS | Third Party API | Bootstrap
+                        
+                            </div>
+
+                            <div class="card-footer text-muted text-center">
+                                <a href="#" class="btn btn-primary btn-lg">Github</a>
+                                <a href="#" class="btn btn-primary btn-lg">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+           </div> <!-- end div projects -->
+         
+           
+         
+        <h1 class="pt-5 mt-5 pb-5 text-center"> Skills & Proficiency</h1>
+            <div id="skills">
+                <div class="row text-center">
+                    <div class="col-sm">HTML</div> 
+                    <div class="col-sm">Underscore.js</div>
+                    <div class="col-sm">NodeJS</div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-sm">CSS/SCSS</div> 
+                    <div class="col-sm">Ruby</div>
+                    <div class="col-sm">Git</div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-sm">Bootstrap</div> 
+                    <div class="col-sm">Ruby on Rails</div>
+                    <div class="col-sm">Third Party APIs</div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-sm">Javascript</div> 
+                    <div class="col-sm">AJAX</div>
+                    <div class="col-sm">Pair Programming</div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-sm">jQuery</div> 
+                    <div class="col-sm">SQLite</div>
+                    <div class="col-sm">TDD</div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-sm">React.js</div> 
+                    <div class="col-sm">PostgreSQL</div>
+                    <div class="col-sm">Agile Methodologies</div>
+                </div>
+        
+            </div>
+        </div>  
+        
+       
+            <h1 class="interests pb-5 pt-5 text-center">Interest</h1>
+            <p>Being a visual person, I have a great interest in anything visual. I have a whole Instagram account dedicated to just <a id="instagram" href="https://www.instagram.com/eggandham" target="_blank"><em>Food Photography</em></a>.
+            <br><br>
+            I enjoy nitpicking and tuning my CSS until it is aesthetically perfect, providing a smooth and accessible end user experience. This also includes experimenting with various Javascript visualisation libraries.
+            <br><br>
+            While I appreciated the ease of being able to build functionality in Rails, I am always up to explore new cool tech.</p>
+ 
+
+        <div id="contact-details" class="contact pt-5">
+           <h1 class="text-center">Contact</h1>
+
+           <div class="contacticon pt-5">
+                <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                    <a href="https://github.com/eggyducktective" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/anna-tran91/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="mailto:anhkaehne@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/eggandham" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/eggyducktective" target="_blank"><i class="fa fa-twitter"></i></a>
+
+                    <div id="topbutton">
+                        <a href="#top">Take it to the 🔝 </a>
+                    </div>
+                </ul>
+           </div>
         </div>
-      </div>
-    </div>
-    <br><br>
 
-    <h1>Interests</h1>
-    <div><br>
-    <p>Being a visual person, I have a great interest in anything visual. I have a whole Instagram account dedicated to just <a id="instagram" href="https://www.instagram.com/eggandham" target="_blank"><em>Food Photography</em></a>.
-    <br><br>
-    I enjoy nitpicking and tuning my CSS until it is aesthetically perfect, providing a smooth and accessible end user experience. This also includes experimenting with various Javascript visualisation libraries.
-    <br><br>
-    While I appreciated the ease of being able to build functionality in Rails, I am always up to explore new cool tech.</p>
-    </div>
-    <br><br>
-
-
-    <a name="contact"></a>
-    <h1>Contact</h1>
-    <br>
-    <div class="contacticon">
-      <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
-        <li> <a href="https://github.com/eggyducktective" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li> <a href="https://www.linkedin.com/in/anna-tran91/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li> <a href="mailto:anhkaehne@gmail.com"><i class="fa fa-envelope"></i></a></li>
-        <li> <a href="https://www.instagram.com/eggandham" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li> <a href="https://twitter.com/eggyducktective" target="_blank"><i class="fa fa-twitter"></i></a></li>
-
-      </ul>
-    </div>
-    <br>
-<hr>
-    <div id="topbutton">
-      <a href="#top">Take it to the 🔝 </a>
-    </div>
-
-  </div>
-
-</body>
+    </body>
 </html>

@@ -1,318 +1,252 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Nunito', sans-serif;
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  height: 100%;
-  overflow: hidden;
+    font-size: 62.5%;
+
 }
 
 body {
-  background: rgb(228, 228, 228);
-  margin:0;
-  padding:0;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem;
+    box-sizing: border-box;
 }
 
 h1 {
-   font-size: 250%;
-   /* color: rgb(185, 31, 96); */
-   color: rgb(93, 138, 113);
-   font-size: 45px;
-   /* font-family: sans-serif; */
-
+    font-size: 4rem;
+    font-weight: bold;
 }
 
-p {
-  font-size: 110%;
-  line-height: 150%;
-  color: #333;
+/*-- Links --*/
+
+.navigation {
+    list-style: none;
+    text-align: center;
+  }
+  
+.navigation li {
+    display: inline-block;
+    padding: 1.5rem;  
 }
 
-h2 {
-  text-shadow: 1px 1px grey;
-  color: rgb(62, 62, 62);
+.navigation li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
 }
 
-#skillsdiv {
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: center;
-}
-
-#contactdiv {
-  margin-left: 2%;
-}
-
-/* ------------Links-------------------*/
-#topbutton {
-  position: relative;
-  padding-top: 50px;
-}
-
-
-
-#topbutton a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 45px;
-  color: rgb(93, 138, 113);
+.navigation li a:hover {
+    font-weight: bold;
+    color: #fff;
 }
 
 
 
 #resume {
-  font-weight: bold;
-  font-size: 30px;
-  position: relative;
-  color: black;
-  text-decoration: none;
+    font-size: 2.5rem;
+    text-decoration: none;
+
 }
 
-.projectLinks {
-  color: rgb(93, 138, 113);
-  text-decoration: none;
-  font-weight: bold;
-  font-family: sans-serif;
-  position: relative; /* this is for slideimg: position: absolute, parallax scrolling works, and for the links to be clickable */
+#resume:hover, #instagram:hover {
+    font-weight: bold;
 }
 
-.projectLinks:hover {
-  text-decoration: underline;
-}
 
 #instagram {
-  position: relative;
-  text-decoration: none;
-  color: #bc2a8d;
-  font-weight: bold;
-}
-
-/* ----------------Skills list--------------------- */
-.column {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*----------------------Nav bar------------------------*/
-.topnav {
-  /* background-color: rgba(93, 138, 113, 0.3); */
-  background-color: rgb(178, 192, 176);
-  overflow: hidden;
-  padding-top: 10px;
-  height: 75px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    /* float: left; */
-    color: #f2f2f2;
-    text-align: center;
-    padding: 16px 16px;
+    color: #bc2a8d;
     text-decoration: none;
-    font-size: 40px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: white;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #d2d2d2;
-    color: white;
-}
+ }
 
 
-/* ------------- BUBBLES EFFECT -------------*/
+ 
+ #topbutton {
+     float: right;
+     font-size: 3rem;
+ }
+ 
+ #topbutton a {
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 4rem;
+ }
 
-.bubbles {
-  display: inline-block;
-  font-family: arial;
-  position: relative;
-}
-
-.bubbles h1 {
-  position: relative;
-  margin: 1em 0 0;
-  color: #fff;
-  font-size: 90px;
-  z-index: 2;
-}
-
-.individual-bubble {
-  position: absolute;
-  border-radius: 100%;
-  bottom: 10px;
-  background-color: #fff;
-  z-index: 1;
-}
-
-
-
-/*-----------------IMAGE SLIDES-----------------------*/
-.slide {
-  position: relative;
-  padding: 25vh 10%;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-  transform-style: inherit;
-}
-
-
-.slideimg {
-  position: relative;
-  width: 30%;
-  height: auto;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 45px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-.slide:before {
-  content: "";
-  /* position: absolute -> Links arent clickable - fixed with link position:relative*/
-  position: absolute; /* this is for parallax images to show */
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-
-}
-
-.title {
-  width: 90%;
-  padding: 5%;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-/* 2n is the FIRST */
-/* 2n+1 is EVERY OTHER */
-
-/* Text is on the left here */
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-/* So lets float the img on the right */
-.slide:nth-child(2n) .slideimg {
-  float: right;
-}
-
-/* Text is on the right here */
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-/* So lets float the img on the left */
-.slide:nth-child(2n+1) .slideimg {
-  float: left;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;
-}
 
 .header {
-  text-align: center;
-  font-size: 175%;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(194, 194, 194, 0.8), rgba(69, 70, 70, 0.8)), url(../img/background.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
 }
 
-
-
-/* ------SET UP IMAGE PARALLAX-------*/
-
-
-#title {
-  background-image: url("../img/backgroundtop.jpg");
-  z-index:2;
+.header__text-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*-- no longer in relation to the parent element--*/
+    text-align: center; 
 }
-
-
-/* photo of the project */
-#slide1:before {
-  background-image: url("../img/slide1-3.jpg");
-  /* background-color: #B2C0B0; */
-  transform: translateZ(-1px) scale(2);
+  
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    /*-- makes the animation less shaky --*/
+    margin-bottom: 6rem; 
 }
-
-
-#slide2 {
-  background-image: url("../img/slide2b.jpg");
-  z-index:2;
+  
+.heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+ }
+  
+.heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; 
 }
-
-
-#slide3:before {
-  background-image: url("../img/slide1-3.jpg");
-  transform: translateZ(-1px) scale(2);
+  
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem); 
+    }
+    80% {
+      transform: translateX(1rem); 
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0); 
+    } 
 }
-
-
-#slide4 {
-  background-image: url("../img/slide4.jpg");
+  
+@keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem); 
+    }
+    80% {
+      transform: translateX(-1rem); 
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0); 
+    } 
 }
-
-
-#slide5 {
-  background-image: url("../img/slide5.png");
+  
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem); 
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0); 
+    } 
 }
-
-
-
-/*------CONTACT ICONS-------*/
-
-.contacticon {
-  width: 100%;
-
-}
-
-.list-unstyled {
-    /* padding-left: 400px; */
-    list-style: none;
-}
-.list-inline li {
+  
+.button:link,
+.button:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-bottom: 10px;
-
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem; 
+}
+  
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
+    color: #777;
+    font-weight: bold;
 
 }
-/*---- Genral classes end -------*/
-/*Change icons size here*/
+  
+.button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
+}
+  
+.button--white {
+    background-color: #fff;
+    color: #777; 
+}
+  
+.button::after {
+    content: '';
+    /*-- always specifies that content of :after --*/
+    display: inline-block;
+    /*-- same value as its class --*/
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; 
+}
+  
+.button--white::after {
+    background-color: #fff; 
+}
+  
+.button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; 
+}
+  
+.button--animated {
+    animation: moveInbottom .5s ease-out .75s;
+    /* animation name - animation duration - animation timing - animation delay */
+    animation-fill-mode: backwards; 
+}
+
+
+
+/*-- projects --*/
+
+.card-title {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(49, 49, 49);
+}
+.card-text {
+    font-size: 1.5rem;
+}
+
+
+/*-- Social Icons --*/
+
+
 .social-icons .fa {
     font-size: 1.8em;
 }
+
 /*Change icons circle size and color here*/
 .social-icons .fa {
     width: 50px;
@@ -321,6 +255,7 @@ h2 {
     text-align: center;
     color: #FFF;
     position: relative;
+    display: inline-block;
     color: rgba(255, 255, 255, 0.8);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -332,9 +267,11 @@ h2 {
 .social-icons.icon-circle .fa{
   border-radius: 50%;
 }
+
 .social-icons.icon-rounded .fa{
   border-radius:5px;
 }
+
 .social-icons.icon-flat .fa{
   border-radius: 0;
 }
@@ -345,6 +282,7 @@ h2 {
   -moz-box-shadow: 1px 1px 3px #333;
   box-shadow: 1px 1px 3px #333;
 }
+
 .social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -371,33 +309,3 @@ h2 {
 .social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;}
 .social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
 
-
-/* -----------MEDIA QUERY---------------*/
-
-@media (max-width: 576px) {
-  .slideimg {
-    position: inherit;
-  }
-
-  .topnav {
-    height: 95px;
-  }
-}
-
-@media (max-width: 699px) {
-  .topnav a {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 757px) {
-  .slide:nth-child(2n+1) .slideimg {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .slide:nth-child(2n) .slideimg {
-    float: none;
-    margin: 0 auto;
-  }
-}
